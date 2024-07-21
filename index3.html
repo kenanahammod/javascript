@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>students</title>
+    <link rel="stylesheet" href="./design.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إدارة قائمة الطلاب</h1>
+        <div class="form-group">
+            <input type="number" id="studentId" placeholder="معرف الطالب">
+            <input type="text" id="studentName" placeholder="اسم الطالب">
+            <button onclick="addStudent()">إضافة طالب</button>
+        </div>
+        <div class="form-group">
+            <input type="number" id="removeId" placeholder="معرف الطالب للحذف">
+            <button onclick="removeStudent()">حذف طالب</button>
+        </div>
+        <h2>قائمة الطلاب:</h2>
+        <ul id="studentList"></ul>
+    </div>
+    <script src="./java2.js"></script>
+</body>
+</html>
